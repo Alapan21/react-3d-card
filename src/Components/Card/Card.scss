@@ -1,0 +1,94 @@
+.card {
+  min-height: 80vh;
+  width: 25rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 100px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  transform-style: preserve-3d;
+}
+
+.sneaker {
+  min-height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 25rem;
+    z-index: 2;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+  }
+  .circle {
+    position: absolute;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    z-index: 1;
+    background: linear-gradient(
+      to right,
+      rgba(245, 70, 65, 0.75),
+      rgba(8, 83, 156, 0.75)
+    );
+  }
+}
+
+.info {
+  .title {
+    font-size: 3rem;
+  }
+  .description {
+    font-size: 1.3rem;
+    padding: 1.5rem 0;
+    color: #585858;
+    font-weight: 300;
+  }
+  .sizes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button {
+      padding: 0.3rem 1rem;
+      background: none;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        background-color: lightcoral;
+        color: white;
+      }
+      &.active {
+        color: lightcoral;
+        font-size: 1.1rem;
+        &:hover {
+          color: white;
+          background-color: lightcoral;
+        }
+      }
+    }
+  }
+}
+
+.purchase {
+  margin-top: 3rem;
+  button {
+    width: 100%;
+    background: none;
+    border: none;
+    background-color: lightcoral;
+    color: white;
+    padding: 1rem 0;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
